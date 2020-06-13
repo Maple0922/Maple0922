@@ -1,0 +1,14 @@
+// colors
+
+$black: #111;
+$super-dark-gray: #444;
+$dark-gray: #666;
+$gray: #888;
+$light-gray: #bbb;
+$super-light-gray: #eee;
+$white: #fcfcfc;
+
+// variables
+$height-header: 80px;
+$height-main: calc(100vh - #{$height-header});
+$basic-shadow: 0 0 8px 0 $light-gray;

@@ -1,0 +1,19 @@
+// mixin
+
+// @mixin hoge(){ }
+
+// break points
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: 1000px)",
+  "pc": "screen and (min-width: 1000px)",
+  "sp-min": "screen and (max-width: 320px)",
+  "pc-max": "screen and (min-width: 1440px)"
+);
+
+// media query
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
