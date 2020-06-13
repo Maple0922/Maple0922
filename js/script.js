@@ -11,20 +11,16 @@ const app = new Vue({
         url: 'image-pdf-converter'
       },
       {
-        name: 'test',
-        url: 'image-pdf-converte'
+        name: 'Vue Gamble Calculator',
+        url: 'vue-gamble-calculator'
       },
       {
-        name: 'test',
-        url: 'image-pdf-conrter'
+        name: 'JS Animation',
+        url: 'js-animation'
       },
       {
-        name: 'test',
-        url: 'image-pdf-converer'
-      },
-      {
-        name: 'test',
-        url: 'image-pdf-coter'
+        name: 'Time Table Maker',
+        url: 'time-table-maker'
       }
     ]
   }

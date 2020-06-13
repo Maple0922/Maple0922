@@ -22,26 +22,54 @@
   font-size: 1.6rem;
   &__container {
     background: $white;
-    padding: 16px 24px;
+    padding: 16px 24px 12px;
     margin-bottom: 20px;
     border-radius: 6px;
     box-shadow: $basic-shadow;
     h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
+      border-bottom: 2px solid $color-theme;
+      padding: 10px;
+      margin-bottom: 24px;
     }
   }
   .pages {
     &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     &__item {
-      border: 1px solid black;
-
+      // color: $white;
+      // background: $color-card;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 12px;
+      @include mq("pc") {
+        width: calc((100% - 48px)/3);
+      }
+      @include mq("tab") {
+        width: calc((100% - 24px)/2);
+      }
+      @include mq("sp") {
+        width: 100%;
+      }
     }
     &__name {
-
+      position: relative;
     }
-    &__url {
-
+    &__link {
+      display: block;
+      width: 100%;
+      margin-right: 20px;
+    }
+    i {
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #ccc;
     }
   }
 }

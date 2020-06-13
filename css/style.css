@@ -64,11 +64,42 @@ a, input, button, textarea, select, option {
   font-size: 1.6rem; }
   .main__container {
     background: #fcfcfc;
-    padding: 16px 24px;
+    padding: 16px 24px 12px;
     margin-bottom: 20px;
     border-radius: 6px;
     box-shadow: 0 0 8px 0 #bbb; }
     .main__container h1 {
-      font-size: 2rem; }
+      font-size: 2.2rem;
+      border-bottom: 2px solid #777;
+      padding: 10px;
+      margin-bottom: 24px; }
+  .main .pages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
   .main .pages__item {
-    border: 1px solid black; }
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px; }
+    @media screen and (min-width: 1000px) {
+      .main .pages__item {
+        width: calc((100% - 48px)/3); } }
+    @media screen and (max-width: 1000px) {
+      .main .pages__item {
+        width: calc((100% - 24px)/2); } }
+    @media screen and (max-width: 767px) {
+      .main .pages__item {
+        width: 100%; } }
+  .main .pages__name {
+    position: relative; }
+  .main .pages__link {
+    display: block;
+    width: 100%;
+    margin-right: 20px; }
+  .main .pages i {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc; }
