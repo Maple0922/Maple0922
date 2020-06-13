@@ -26,6 +26,23 @@
     margin-bottom: 20px;
     border-radius: 6px;
     box-shadow: $basic-shadow;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  .pages {
+    &__list {
+    }
+    &__item {
+      border: 1px solid black;
+
+    }
+    &__name {
+
+    }
+    &__url {
+
+    }
   }
 }
 

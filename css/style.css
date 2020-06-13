@@ -68,3 +68,7 @@ a, input, button, textarea, select, option {
     margin-bottom: 20px;
     border-radius: 6px;
     box-shadow: 0 0 8px 0 #bbb; }
+    .main__container h1 {
+      font-size: 2rem; }
+  .main .pages__item {
+    border: 1px solid black; }
