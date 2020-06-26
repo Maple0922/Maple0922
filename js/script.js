@@ -21,6 +21,10 @@ const app = new Vue({
       {
         name: 'Time Table Maker',
         url: 'time-table-maker'
+      },
+      {
+        name: 'Gamble Payment',
+        url: 'http://maple0922.php.xdomain.jp'
       }
     ]
   }
