@@ -4,12 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Github Pages</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="icon/favicon.ico">
   <link rel="apple-touch-icon" href="icon/favicon.ico">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
   <header class="header">
@@ -17,7 +15,7 @@
   </header>
   <main class="main">
     <div class="main__container pages">
-      <h1>Pages</h1>
+      <h1></h1>
       <ul class="pages__list">
         <li v-for="item in items" :key="item.url" class="pages__item">
           <p class="pages__name"><a :href="item.url" class="pages__link">{{ item.name }}</a><i class="fas fa-external-link-alt"></i></p>
@@ -25,6 +23,6 @@
       </ul>
     </div>
   </main>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/bundle.js"></script>
 </body>
 </html>

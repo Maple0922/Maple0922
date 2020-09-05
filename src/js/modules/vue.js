@@ -1,4 +1,4 @@
-const app = new Vue({
+export const app = new Vue({
   el: '.pages',
   data: {
     items: [

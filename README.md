@@ -1,4 +1,15 @@
-# Maple0922.github.io
-github pages
+# 🚀 Welcome to your new awesome project!
 
-https://maple0922.github.io
+This project has been created using **webpack scaffold**, you can now run
+
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application

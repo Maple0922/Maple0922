@@ -3,12 +3,13 @@
 // styles
 
 .header {
-  height: $height-header;
+  position: relative;
   width: 100%;
+  height: $height-header;
   padding: 0 30px;
   background: $white;
   box-shadow: $basic-shadow;
-  position: relative;
+
   &__title {
     font-size: 2.4rem;
     line-height: $height-header;
@@ -17,59 +18,71 @@
 
 .main {
   min-height: $height-main;
-  background: $super-light-gray;
   padding: 30px;
   font-size: 1.6rem;
+  background: $super-light-gray;
+
   &__container {
-    background: $white;
     padding: 16px 24px 12px;
     margin-bottom: 20px;
+    background: $white;
     border-radius: 6px;
     box-shadow: $basic-shadow;
+
     h1 {
-      font-size: 2.2rem;
-      border-bottom: 2px solid $color-theme;
       padding: 10px;
       margin-bottom: 24px;
+      font-size: 2.2rem;
+      border-bottom: 2px solid $color-theme;
     }
   }
+
   .pages {
+
     &__list {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
     &__item {
-      // color: $white;
-      // background: $color-card;
-      border: 2px solid #ddd;
-      border-radius: 8px;
       padding: 12px;
       margin-bottom: 12px;
+      // color: $white;
+      // background: $color-card;
+
+      border: 2px solid #ddd;
+      border-radius: 8px;
+
       @include mq("pc") {
-        width: calc((100% - 48px)/3);
+        width: calc((100% - 48px) / 3);
       }
+
       @include mq("tab") {
-        width: calc((100% - 24px)/2);
+        width: calc((100% - 24px) / 2);
       }
+
       @include mq("sp") {
         width: 100%;
       }
     }
+
     &__name {
       position: relative;
     }
+
     &__link {
       display: block;
       width: 100%;
       margin-right: 20px;
     }
+
     i {
       position: absolute;
-      right: 0px;
       top: 50%;
-      transform: translateY(-50%);
+      right: 0;
       color: #ccc;
+      transform: translateY(-50%);
     }
   }
 }
