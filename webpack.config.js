@@ -1,14 +1,15 @@
 const path = require('path');
 const outputPath = path.resolve(__dirname,'dist/js');
 const webpack = require('webpack');
-const StyleLintPlugin = require('stylelint-webpack-plugin')
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
 
-	entry: './src/js/index.js',
+	entry: './src/index.js',
 
 	output: {
 		path: outputPath,
@@ -42,23 +43,5 @@ module.exports = {
 				use: ['url-loader']
 			}
 		]
-	},
-
-	optimization: {
-		minimizer: [new TerserPlugin()],
-
-		splitChunks: {
-			cacheGroups: {
-				vendors: {
-					priority: -10,
-					test: /[\\/]node_modules[\\/]/
-				}
-			},
-
-			chunks: 'async',
-			minChunks: 1,
-			minSize: 30000,
-			name: true
-		}
 	}
 };
