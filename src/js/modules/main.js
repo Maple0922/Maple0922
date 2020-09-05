@@ -6,4 +6,5 @@ export default function main(){
   $('h1').click(function(){
     $(this).fadeOut();
   });
+  console.log('wo');
 }

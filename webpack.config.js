@@ -1,4 +1,5 @@
 const path = require('path');
+const outputPath = path.resolve(__dirname,'dist/js');
 const webpack = require('webpack');
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -10,52 +11,35 @@ module.exports = {
 	entry: './src/js/index.js',
 
 	output: {
-		filename: 'bundle.js',
-		path: path.join(__dirname, 'dist/js')
+		path: outputPath,
+		publicPath: '/js/',
+		filename: 'bundle.js'
+	},
+
+	devServer: {
+		contentBase: path.resolve(__dirname, 'dist/'),
+		inline: true,
+    hot: true
 	},
 
 	plugins: [
-		new webpack.ProgressPlugin(),
-		new MiniCssExtractPlugin({ filename: 'main.[chunkhash].css' }),
 		new StyleLintPlugin({
-      files: ['**/*.scss'],
-      configFile: path.join(__dirname, '.stylelintrc'),
-      syntax: 'scss',
-      fix: true
-    }),
-		new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    })
+			files: ['**/*.scss'],
+			configFile: path.join(__dirname, '.stylelintrc'),
+			syntax: 'scss',
+			fix: true
+		})
 	],
 
 	module: {
 		rules: [
 			{
-				test: /.(scss|css)$/,
-
-				use: [
-					{
-						loader: MiniCssExtractPlugin.loader
-					},
-					{
-						loader: 'style-loader'
-					},
-					{
-						loader: 'css-loader',
-
-						options: {
-							sourceMap: true
-						}
-					},
-					{
-						loader: 'sass-loader',
-
-						options: {
-							sourceMap: true
-						}
-					}
-				]
+				test: /\.scss/,
+				use: ['style-loader','css-loader','sass-loader']
+			},
+			{
+				test: /\.(jpg|png|gif|webp)$/,
+				use: ['url-loader']
 			}
 		]
 	},
