@@ -15,6 +15,7 @@
     &__title {
       display: flex;
       align-items: baseline;
+      margin-bottom: 20px;
 
       &--ja {
 
@@ -92,7 +93,7 @@
 
       &__item {
         margin-bottom: 10px;
-        font-size: 20px;
+        font-size: 18px;
       }
     }
   }
