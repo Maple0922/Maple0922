@@ -1,6 +1,13 @@
 // import
 
-@import "variables";
-@import "mixins";
-@import "reset";
-@import "font";
+// share
+
+@import "share/variables";
+@import "share/mixins";
+@import "share/reset";
+@import "share/font";
+
+// component
+@import "component/hamburger";
+@import "component/header";
+@import "component/main";

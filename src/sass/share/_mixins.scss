@@ -1,0 +1,30 @@
+// mixin
+
+// @mixin hoge(){ }
+
+// break points
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "pc": "screen and (min-width: 768px)",
+  "sp-min": "screen and (max-width: 360px)",
+  "pc-max": "screen and (min-width: 1440px)"
+);
+
+$breakpoints-header: (
+  "sp": "screen and (max-width: 700px)",
+  "tab": "screen and (min-width: 701px)",
+  "pc": "screen and (min-width: 1150px)"
+);
+
+// media query
+@mixin mq($breakpoint) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-header($breakpoint) {
+  @media #{map-get($breakpoints-header, $breakpoint)} {
+    @content;
+  }
+}

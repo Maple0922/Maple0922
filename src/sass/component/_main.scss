@@ -1,0 +1,99 @@
+.main {
+  height: 200vh;
+  padding: 30px;
+  line-height: 1.6;
+  background: $super-light-gray;
+
+  &__container {
+    width: 80%;
+    max-width: 1000px;
+    padding: 50px 24px 12px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 6px;
+
+    &__title {
+      display: flex;
+      align-items: baseline;
+
+      &--ja {
+
+        &::before {
+          margin-right: 6px;
+          content: '−';
+        }
+      }
+
+      &--en {
+        margin-right: 16px;
+      }
+
+      @include mq("pc") {
+
+        &--en {
+          font-size: 28px;
+        }
+
+        &--ja {
+          font-size: 16px;
+        }
+      }
+
+      @include mq("sp") {
+
+        &--en {
+          font-size: 22px;
+        }
+
+        &--ja {
+          font-size: 12px;
+        }
+      }
+    }
+
+    &__content {
+      display: block;
+    }
+  }
+
+  .profile {
+
+    &__content {
+      @include mq("pc") {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @include mq("sp") {
+        display: block;
+      }
+    }
+
+    &__image {
+      border-radius: 150px;
+
+      @include mq("pc") {
+        width: 30%;
+      }
+
+      @include mq("sp") {
+        width: 100%;
+      }
+    }
+
+    &__list {
+      @include mq("pc") {
+        width: 60%;
+      }
+
+      @include mq("sp") {
+        width: 100%;
+      }
+
+      &__item {
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+    }
+  }
+}

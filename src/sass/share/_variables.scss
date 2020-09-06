@@ -1,0 +1,27 @@
+// colors
+
+// base color
+$black: #111;
+$super-dark-gray: #444;
+$dark-gray: #666;
+$gray: #888;
+$light-gray: #aaa;
+$super-light-gray: #ddd;
+$white: #fcfcfc;
+$off-white: #f1f1f1;
+$dark-blue: #272d36;
+$bright-blue: lighten($dark-blue, 10);
+$transparent-blue: transparentize($dark-blue, 0.6);
+$transparent-black: transparentize($black, 0.8);
+
+// variables
+$height-header-pc: 80vh;
+$height-header-tab: 55vh;
+$height-header-sp: 30vh;
+$basic-shadow: 0 0 8px 0 $light-gray;
+
+// colors
+$header-shadow: $transparent-blue;
+$header-text: $super-light-gray;
+$caption-text: $light-gray;
+$upper-text: $bright-blue;

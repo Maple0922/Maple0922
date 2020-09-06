@@ -1,0 +1,71 @@
+.header {
+  position: relative;
+  width: 100%;
+  color: $header-text;
+  background: url('../images/header.jpg');
+  background-position: center 0%;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    vertical-align: center;
+    background: $header-shadow;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-weight: 300;
+    text-align: center;
+
+    &--upper {
+      // color: $upper-text;
+    }
+  }
+
+  &__caption {
+    font-weight: 300;
+    color: $caption-text;
+    text-align: center;
+  }
+
+  @include mq-header("sp") {
+    height: $height-header-sp;
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__caption {
+      font-size: 16px;
+    }
+  }
+
+  @include mq-header("tab") {
+    height: $height-header-tab;
+
+    &__title {
+      font-size: 28px;
+    }
+
+    &__caption {
+      font-size: 18px;
+    }
+  }
+
+  @include mq-header("pc") {
+    height: $height-header-pc;
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__caption {
+      font-size: 20px;
+    }
+  }
+}

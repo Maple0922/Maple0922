@@ -1,0 +1,125 @@
+.hamburger {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 5000;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  // border: 1px solid $off-white;
+  background: $transparent-black;
+  border-radius: 4px;
+
+  .bar {
+    position: relative;
+    top: 5px;
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin: 6px auto;
+    background: $off-white;
+    transition: 0.2s ease-out;
+  }
+
+  &--active {
+
+    .first {
+      transform: translateY(8px) rotate(-315deg) scale(1.1);
+    }
+
+    .second {
+      // transform: translateX(30px);
+      opacity: 0;
+    }
+
+    .third {
+      transform: translateY(-8px) rotate(315deg) scale(1.1);
+    }
+  }
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3000;
+  display: none;
+  padding: 90px 0;
+  color: $white;
+  pointer-events: all;
+  background: #111111f3;
+
+  .menu {
+    width: 240px;
+    margin: 0 auto 60px;
+
+    &__item {
+      // border: 1px solid white;
+      margin-bottom: 36px;
+
+      a {
+        transition: 0.2s;
+
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      transition: 0.2s;
+    }
+
+    &__description {
+      color: $gray;
+
+      &::before {
+        margin-right: 8px;
+        content: '−';
+      }
+    }
+
+    @include mq("pc") {
+
+      &__title {
+        font-size: 28px;
+      }
+
+      &__description {
+        font-size: 16px;
+      }
+    }
+
+    @include mq("sp") {
+
+      &__title {
+        font-size: 20px;
+      }
+
+      &__description {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .sns {
+    display: flex;
+    justify-content: space-around;
+    width: 240px;
+    margin: 0 auto;
+
+    .twitter,
+    .instagram,
+    .youtube {
+      width: 28px;
+      height: 28px;
+
+      img {
+        height: 28px;
+      }
+    }
+  }
+}

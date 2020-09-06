@@ -2,4 +2,95 @@
 2.自己紹介
 3.スキルセット
 4.実績、成果
-5.
+
+1.
+
+写真
+Webエンジニアを目指している大学生です。
+身の回りの課題解決･効率化が大好きです。
+主にやっているのはフロントですが、課題解決のために必要な技術を考え学んでいます。
+大学では軽音サークルに入り、趣味でギター、ベースを弾いています。
+
+2.
+
+
+3.
+HTML5 CSS3 Sass(SCSS) JavaScript jQuery Vue.js Angular PHP Laravel
+Git(Github) Gulp Webpack WordPress MySQL SQLite
+Atom Figma Xserver Slack Chatwork  Asana Trello
+
+4.
+個人開発
+BUYO
+Time Table Maker
+Oh-o!Meiji Server Error Bot
+image PDF Converter
+Vue Gamble Calculator
+
+実務
+Clin
+自社ブログhugo
+Mobile Order System
+
+
+BUYO
+3ヶ月
+PHP,JavaScript,Sass,SQLite,XServer
+サークルで使っている部室の使用予約ができるサイトです。
+今までメーリングリストアプリ内のチャットで行なっていた手間のかかる業務を、Webサイトに
+アクセスして操作するだけ、ログイン不要という、最低限のフローで済ませられる
+ようにすることを意識しました。また、予約･変更･削除時にはLINEの公式アカウントから
+通知がくるようにもなっています。
+デザインはいつかちゃんと考え直そうと思います。
+
+
+Time Table Maker
+2週間ほど
+Sass,JavaScript,jQuery
+サークルでのライブの際に、タイムテーブルや時間を見やすく表示するために作りました。
+メモ帳のスクリーンショットで当日に共有されていたタイムテーブルは、オフライン環境で行なっていた
+ライブ中にアクセスしても見られなかったため、完全オフラインで動作することを想定して作りました。
+
+
+Oh-o!Meiji Server Error Bot
+1週間
+PHP,Cron
+オンライン授業が始まった際、大学ポータルサイトがよくサーバーダウンしていたため、
+TwitterBotの勉強も兼ねて作りました。1分ごとにCronでサーバーの状態をチェックし、
+メンテナンス時、サーバーエラー時にツイートで教えてくれます。
+
+image PDF Converter
+2日
+JavaScript,PDFMake(ライブラリ)
+オンライン授業で「写真を撮ってPDFにして提出」という課題が出始め、「この写真PDFにして！」
+とよく頼んできていた友達に向けて作りました。
+github.ioで公開したかったため、クライアントサイドのみで動作するPDFMakeというJavaScript
+ライブラリを使用しました。
+
+Vue Gamble Calculator
+3日
+Vue.jsに慣れるために初めて作ったWebアプリです。
+よく決まった4人で様々なものを賭けてオンラインゲームをしていたため、
+その点数をバランスよくポイント化し、合計を出すアプリを作りました。
+
+
+Clin
+3週間ほど
+HTML,Sass,jQuery
+エンジニアとして初めて請け負った仕事で、デザインカンプを元にLPサイトのコーディング、
+レスポンシブ対応を行いました。
+
+3週間ほど
+自社ブログ
+Sass,Hugo
+当時いた会社で、自社の技術などを発信するブログの外枠のコーディングを行いました。
+Hugoという静的サイトジェネレータを使用し、元のテーマをデザインに合わせてカスタマイズしました。
+
+Mobile Order System
+3ヶ月
+Angular
+飲食店の大規模なモバイルオーダーシステムのフロント部分を担当しました。
+Angularの深い部分にまでは触れられていませんが、SPA、コンポーネント指向など
+モダンフロントエンドの雰囲気はそこでなんとなく掴みました。
+また、Github Issueをベースにしたフルリモートのチーム開発で、コードレビューやlinter、
+CIなどによる品質管理の重要性も学びました。
