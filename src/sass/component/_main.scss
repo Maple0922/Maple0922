@@ -1,21 +1,19 @@
 .main {
   height: 200vh;
-  padding: 30px;
-  line-height: 1.6;
+  padding: 30px 0;
+  line-height: 1.8;
   background: $super-light-gray;
 
   &__container {
-    width: 80%;
+    width: 84%;
     max-width: 1000px;
-    padding: 50px 24px 12px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 50px;
     border-radius: 6px;
 
     &__title {
       display: flex;
       align-items: baseline;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
 
       &--ja {
 
@@ -62,6 +60,7 @@
     &__content {
       @include mq("pc") {
         display: flex;
+        align-items: center;
         justify-content: space-between;
       }
 
@@ -71,20 +70,24 @@
     }
 
     &__image {
-      border-radius: 150px;
+      border-radius: 50%;
 
       @include mq("pc") {
-        width: 30%;
+        width: 24vw;
+        max-width: 240px;
+        height: 24vw;
+        max-height: 240px;
       }
 
       @include mq("sp") {
-        width: 100%;
+        max-width: 200px;
       }
     }
 
     &__list {
       @include mq("pc") {
-        width: 60%;
+        width: 70vw;
+        max-width: 700px;
       }
 
       @include mq("sp") {
@@ -92,8 +95,15 @@
       }
 
       &__item {
-        margin-bottom: 10px;
-        font-size: 18px;
+        font-size: 16px;
+
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+
+        &::before {
+          content: '- ';
+        }
       }
     }
   }

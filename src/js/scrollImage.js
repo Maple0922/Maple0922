@@ -11,7 +11,7 @@ export default function scrollImage(){
     ratio /= 80;
   }
   else if(isSP){
-    ratio /= 30;
+    ratio /= 35;
   }
   else {
     ratio /= 55;
