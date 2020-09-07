@@ -129,8 +129,8 @@
           }
 
           @include mq("sp") {
-            width: 18px;
-            height: 20px;
+            width: 20px;
+            height: 22px;
           }
         }
 
@@ -140,7 +140,7 @@
           }
 
           @include mq("sp") {
-            font-size: 12px;
+            font-size: 14px;
           }
         }
       }
