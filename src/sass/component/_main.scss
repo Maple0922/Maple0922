@@ -122,10 +122,26 @@
           width: 24px;
           height: 26px;
           margin-right: 14px;
+
+          @include mq("pc") {
+            width: 24px;
+            height: 26px;
+          }
+
+          @include mq("sp") {
+            width: 18px;
+            height: 20px;
+          }
         }
 
         &__text {
-          font-size: 16px;
+          @include mq("pc") {
+            font-size: 16px;
+          }
+
+          @include mq("sp") {
+            font-size: 12px;
+          }
         }
       }
     }
