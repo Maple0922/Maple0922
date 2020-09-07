@@ -112,13 +112,15 @@
     margin: 0 auto;
 
     .twitter,
-    .instagram,
-    .youtube {
-      width: 28px;
-      height: 28px;
+    .github {
+      @include mq("pc") {
+        width: 48px;
+        height: 48px;
+      }
 
-      img {
-        height: 28px;
+      @include mq("sp") {
+        width: 32px;
+        height: 32px;
       }
     }
   }

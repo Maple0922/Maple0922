@@ -1,19 +1,32 @@
 .main {
   height: 200vh;
-  padding: 30px 0;
   line-height: 1.8;
-  background: $super-light-gray;
+  background: $main-background;
 
   &__container {
     width: 84%;
     max-width: 1000px;
     margin: 0 auto 50px;
-    border-radius: 6px;
+
+    @include mq("pc") {
+      padding-top: 80px;
+    }
+
+    @include mq("sp") {
+      padding-top: 30px;
+    }
 
     &__title {
       display: flex;
       align-items: baseline;
-      margin-bottom: 40px;
+
+      @include mq("pc") {
+        margin-bottom: 80px;
+      }
+
+      @include mq("sp") {
+        margin-bottom: 30px;
+      }
 
       &--ja {
 
@@ -83,6 +96,7 @@
 
       @include mq("sp") {
         max-width: 200px;
+        margin-bottom: 20px;
       }
     }
 
@@ -97,17 +111,22 @@
       }
 
       &__item {
-        font-size: 16px;
+        display: flex;
 
         &:not(:last-child) {
-          margin-bottom: 10px;
+          margin-bottom: 16px;
         }
-      }
 
-      &__icon {
-        width: 50px;
-        height: 50px;
-        border: 1px solid black;
+        &__icon {
+          width: auto;
+          width: 24px;
+          height: 26px;
+          margin-right: 14px;
+        }
+
+        &__text {
+          font-size: 16px;
+        }
       }
     }
   }

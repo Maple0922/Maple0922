@@ -3,8 +3,8 @@ const outputPath = path.resolve(__dirname,'dist/js');
 const webpack = require('webpack');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+// const tiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const terserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
 	mode: 'development',
@@ -20,7 +20,7 @@ module.exports = {
 	devServer: {
 		contentBase: path.resolve(__dirname, 'dist/'),
 		inline: true,
-    hot: true
+		hot: true
 	},
 
 	plugins: [
@@ -36,12 +36,23 @@ module.exports = {
 		rules: [
 			{
 				test: /\.scss/,
-				use: ['style-loader','css-loader','sass-loader']
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				]
 			},
 			{
-				test: /\.(jpg|png|gif|webp)$/,
-				use: ['url-loader']
+				test: /\.(jpg|png|gif|webp|svg)$/,
+				use: 'url-loader'
 			}
+			// {
+			// 	test: /\.svg$/,
+			// 	use: [
+			// 		'url-loader',
+			// 		'svg-transform-loader'
+			// 	]
+			// }
 		]
 	}
 };
