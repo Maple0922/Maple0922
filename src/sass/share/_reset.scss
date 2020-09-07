@@ -7,6 +7,8 @@
 html {
   color: $black;
   background: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body,
