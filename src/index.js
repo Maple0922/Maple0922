@@ -1,5 +1,5 @@
 import './sass/style.scss';
-// import app from './js/vue';
+import app from './js/vue';
 import insertImage from './js/insertImage';
 import insertSvg from './js/insertSvg';
 import scrollImage from './js/scrollImage';

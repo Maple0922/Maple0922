@@ -146,4 +146,28 @@
       }
     }
   }
+
+  .skills {
+
+    &__container {
+      display: block;
+    }
+
+    &__category {
+      display: block;
+    }
+
+    &__list {
+
+      &__item {
+        display: inline-block;
+        padding: 2px 8px;
+        margin: 2px;
+        font-size: 12px;
+        color: $white;
+        background: blue;
+        border-radius: 8px;
+      }
+    }
+  }
 }
