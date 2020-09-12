@@ -87,7 +87,7 @@
         <div class="skills__container" v-for="skill in skills">
           <h3 class="skills__category">{{ skill.category }}</h3>
           <ul class="skills__list">
-            <li class="skills__list__item" v-for="item in skill.items">{{ item.name }} : {{ document.write('☆') }}</li>
+            <li class="skills__list__item" v-for="item in skill.items">{{ item.name }}</li>
           </ul>
         </div>
       </section>
