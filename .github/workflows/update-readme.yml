@@ -1,0 +1,62 @@
+name: Update README stats
+
+on:
+  schedule:
+    # 00:00 UTC = 09:00 JST
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/scripts/update-stats.mjs'
+      - '.github/scripts/render-cards.mjs'
+      - '.github/workflows/update-readme.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-readme
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check token
+        id: token
+        env:
+          PAT: ${{ secrets.PROFILE_TOKEN }}
+        run: |
+          if [ -z "$PAT" ]; then
+            echo "::warning::PROFILE_TOKEN is not set — skipping. GITHUB_TOKEN cannot read private contributions, so running with it would wipe the real numbers."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Regenerate stats block
+        if: steps.token.outputs.skip == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+          PROFILE_LOGIN: ${{ github.repository_owner }}
+        run: node .github/scripts/update-stats.mjs
+
+      - name: Commit
+        if: steps.token.outputs.skip == 'false'
+        run: |
+          if [ -z "$(git status --porcelain README.md assets)" ]; then
+            echo "README and cards are already up to date."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets
+          git commit -m "chore(readme): refresh contribution stats"
+          git push
