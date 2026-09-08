@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="230" viewBox="0 0 880 230" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#39D353" />
+      <stop offset="100%" stop-color="#1F6FEB" />
+    </linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="879" height="229" rx="10" fill="#0D1117" stroke="#21262D" />
+  <path d="M0.5 10.5a10 10 0 0 1 10-10h859a10 10 0 0 1 10 10v26H0.5z" fill="#161B22" stroke="#21262D" />
+  <circle cx="22" cy="18" r="6" fill="#FF5F56" />
+  <circle cx="40" cy="18" r="6" fill="#FFBD2E" />
+  <circle cx="58" cy="18" r="6" fill="#27C93F" />
+  <text x="440" y="22" fill="#8B949E" font-size="12" text-anchor="middle">maple0922@wizleapinc: ~/profile</text>
+
+  <text x="28" y="70" fill="#39D353" font-size="14">$ whoami</text>
+  <text x="28" y="118" fill="#C9D1D9" font-size="36" font-weight="700">Futo Nakajima</text>
+  <text x="28" y="148" fill="#8B949E" font-size="14">Software Engineer @ Wizleap Inc.</text>
+  <text x="28" y="172" fill="#8B949E" font-size="14">Tokyo, Japan · coding since 2018</text>
+  <text x="28" y="204" fill="#39D353" font-size="14">$ <tspan font-size="15">▊<animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite" /></tspan></text>
+
+  <rect x="632" y="54" width="220" height="1" fill="url(#glow)" opacity="0.6" />
+  <text x="852" y="112" fill="#C9D1D9" font-size="15" font-weight="600" text-anchor="end">10,136</text>
+  <text x="756" y="112" fill="#8B949E" font-size="12" text-anchor="end">contributions / yr</text>
+  <text x="852" y="138" fill="#C9D1D9" font-size="15" font-weight="600" text-anchor="end">6,637</text>
+  <text x="756" y="138" fill="#8B949E" font-size="12" text-anchor="end">pull requests</text>
+  <text x="852" y="164" fill="#C9D1D9" font-size="15" font-weight="600" text-anchor="end">42,996</text>
+  <text x="756" y="164" fill="#8B949E" font-size="12" text-anchor="end">all-time</text>
+</svg>
