@@ -50,7 +50,7 @@ $ gh contributions --user Maple0922 --include-private
 │ Issues opened ········································· 199 │
 │ Repositories contributed to ···························· 34 │
 │                                                             │
-│ Current streak ···································· 13 days │
+│ Current streak ····································· 0 days │
 │ Longest streak ···································· 30 days │
 │ Active days ········································· 1,718 │
 │ Busiest day ······························ 2023-01-15 (175) │
@@ -77,7 +77,7 @@ $ gh contributions --user Maple0922 --include-private
 ╰─────────────────────────────────────────────────────────────╯
 ```
 
-<sub>🤖 Auto-generated from the GitHub GraphQL API · last run 2026-10-11 03:53 UTC</sub>
+<sub>🤖 Auto-generated from the GitHub GraphQL API · last run 2026-10-12 04:14 UTC</sub>
 <!-- STATS:END -->
 
 <div align="center">
