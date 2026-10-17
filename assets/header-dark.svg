@@ -21,8 +21,8 @@
   <rect x="632" y="54" width="220" height="1" fill="url(#glow)" opacity="0.6" />
   <text x="852" y="112" fill="#C9D1D9" font-size="15" font-weight="600" text-anchor="end">11,055</text>
   <text x="756" y="112" fill="#8B949E" font-size="12" text-anchor="end">contributions / yr</text>
-  <text x="852" y="138" fill="#C9D1D9" font-size="15" font-weight="600" text-anchor="end">7,270</text>
+  <text x="852" y="138" fill="#C9D1D9" font-size="15" font-weight="600" text-anchor="end">7,284</text>
   <text x="756" y="138" fill="#8B949E" font-size="12" text-anchor="end">pull requests</text>
-  <text x="852" y="164" fill="#C9D1D9" font-size="15" font-weight="600" text-anchor="end">44,790</text>
+  <text x="852" y="164" fill="#C9D1D9" font-size="15" font-weight="600" text-anchor="end">44,823</text>
   <text x="756" y="164" fill="#8B949E" font-size="12" text-anchor="end">all-time</text>
 </svg>
