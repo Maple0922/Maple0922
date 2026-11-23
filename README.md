@@ -45,12 +45,12 @@ $ gh contributions --user Maple0922 --include-private
 ╭─ SUMMARY ───────────────────────────────────────────────────╮
 │ Contributions (last 365 days) ······················ 13,819 │
 │ Contributions (all time) ··························· 47,290 │
-│ Contributions (last 30 days) ························ 2,779 │
+│ Contributions (last 30 days) ························ 2,759 │
 │ Pull requests opened ································ 8,000 │
 │ Issues opened ········································· 198 │
 │ Repositories contributed to ···························· 38 │
 │                                                             │
-│ Current streak ····································· 7 days │
+│ Current streak ····································· 0 days │
 │ Longest streak ···································· 30 days │
 │ Active days ········································· 1,749 │
 │ Busiest day ······························ 2026-10-30 (401) │
@@ -77,7 +77,7 @@ $ gh contributions --user Maple0922 --include-private
 ╰─────────────────────────────────────────────────────────────╯
 ```
 
-<sub>🤖 Auto-generated from the GitHub GraphQL API · last run 2026-11-22 04:58 UTC</sub>
+<sub>🤖 Auto-generated from the GitHub GraphQL API · last run 2026-11-23 05:41 UTC</sub>
 <!-- STATS:END -->
 
 <div align="center">
